@@ -1,0 +1,69 @@
+.hourly {
+    background-color: $unice-gray;
+    border-radius: 10px;
+    width: calc(40% - 40px);
+    font-family: $montserrat;
+    font-weight: 500;
+    padding: 30px;
+    margin-left: 40px;
+    height: max-content;
+}
+
+.hourly__header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hourly__header--title {
+    color: $orange;
+}
+
+.hourly__header--data {
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.hourly__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.hourly__list--item {
+    width: 100%;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $light-gray;
+}
+.hourly__list--item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.forec {
+    display: flex;
+}
+
+.forec p {
+    align-self: center;
+    color: $orange;
+    font-size: 20px;
+}
+
+.time, .temper {
+    align-self: center;
+    font-size: 20px;
+    color: $dark-gray;
+}
+
+@include media (1200px) {
+    .hourly {
+        width: 100%;
+        margin: 0;
+    }
+}

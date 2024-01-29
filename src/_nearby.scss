@@ -1,0 +1,49 @@
+.nearby {
+    // width: 60%;
+    background-color: $unice-gray;
+    border-radius: 10px;
+    padding: 30px 40px 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-family: $montserrat;
+    
+}
+
+.nearby__title {
+    width: 100%;
+    font-size: 24px;
+    color: $orange;
+    font-weight: 500;
+}
+
+.nearby__city {
+    width: 45%;
+    border-radius: 20px;
+    border: 1px solid $light-gray;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.city__name {
+    width: 50%;
+    align-self: center;
+    color: $dark-gray;
+}
+
+.city__stat {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.city__stat img {
+    display: block;
+}
+
+.city__stat p{
+    align-self: center;
+    text-align: right;
+}

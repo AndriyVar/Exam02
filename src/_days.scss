@@ -1,0 +1,52 @@
+.daily {
+    display: none;
+}
+
+.days {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.days__item {
+    width: 47%;
+    background-color: $unice-gray;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+}
+
+.days__item .date {
+    width: 50%;
+}
+
+.days__forecast {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days__forecast img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.days__forecast p {
+    width: 50%;
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    color: $dark-gray;
+}
+
+@include media (800px) {
+    .days__item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .days__item .date {
+        width: 100%;
+    }
+}

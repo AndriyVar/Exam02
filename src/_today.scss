@@ -1,0 +1,70 @@
+.week {
+    display: none;
+}
+
+.today {
+    display: flex;
+    background-color: $unice-gray;
+    border: 4px solid $dark-gray;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.today .temperature {
+    width: 25%;
+}
+
+.today .forecast {
+    width: 20%;
+}
+
+.date {
+    width: 30%;
+    font-family: $montserrat;
+    font-weight: 500;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.date__title {
+    color: $orange;
+    font-size: 24px;
+    width: 100%;
+}
+
+.date__data {
+    color: $dark-gray;
+    font-size: 32px;
+}
+
+.line {
+    width: 100%;
+    border: 1px solid $orange;
+    margin-bottom: 30px;
+}
+
+@include media (800px) {
+    .today {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .date {
+        width: 100%;
+    }
+
+    .date__data {
+        text-align: right;
+    }
+
+    .date__data, .date__title {
+        width: 50%;
+    }
+
+    .today .forecast {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-gray;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+}
+
+.active__block {
+    display: block!important;
+}
+
+.unactive__block {
+    display: none;
+}
+
+@include media (1200px) {
+    .content {
+        flex-wrap: wrap;
+    }
+}

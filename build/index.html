@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2 class="header__title">Weather_ez</h2>
+            <div class="header__line"></div>
+            <div class="header__search">
+                <input type="text" placeholder="Enter city name">
+                <button></button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="weather">
+                <ul class="menu">
+                    <li class="menu__item active">Today</li>
+                    <li class="menu__item">5-day forecast</li>
+                </ul>
+                <div class="daily tab__contetn active__block">
+                    <div class="current">
+                        <div class="current__temp">
+                            <h3 class="current__title">CURRENT WEATHER</h3>
+                            <div class="forecast">
+                                <img src="img/sunny.svg" alt="">
+                                <p>Sunny</p>
+                            </div>
+                            <div class="temperature">
+                                <p class="feel">29&deg;C</p>
+                                <p class="real__feel">Real feel 30&deg;C</p>
+                            </div>
+                        </div>
+                        <div class="current__other">
+                            <ul class="other__list">
+                                <li class="other__list--item">
+                                    <div class="text wind">Wind:</div>
+                                    <div class="stat wind__stat">11 ESE</div>
+                                </li>
+                                <li class="other__list--item">
+                                    <div class="text sunr">Sunrise:</div>
+                                    <div class="stat sunr__stat">7:04 AM</div>
+                                </li>
+                                <li class="other__list--item">
+                                    <div class="text suns">Sunset:</div>
+                                    <div class="stat suns__stat">5:11 PM</div>
+                                </li>
+                                <li class="other__list--item">
+                                    <div class="text dur">Duration:</div>
+                                    <div class="stat dur__stat">10:07 hr</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nearby">
+                        <h3 class="nearby__title">NEARBY PLACES</h3>
+                        <div class="nearby__city">
+                            <p class="city__name">Boryspol</p>
+                            <div class="city__stat"><img src="img/rain.svg" alt="">
+                                <p>29&deg;C</p>
+                            </div>
+                        </div>
+                        <div class="nearby__city">
+                            <p class="city__name">Boryspol</p>
+                            <div class="city__stat"><img src="img/rain.svg" alt="">
+                                <p>29&deg;C</p>
+                            </div>
+                        </div>
+                        <div class="nearby__city">
+                            <p class="city__name">Boryspol</p>
+                            <div class="city__stat"><img src="img/rain.svg" alt="">
+                                <p>29&deg;C</p>
+                            </div>
+                        </div>
+                        <div class="nearby__city">
+                            <p class="city__name">Boryspol</p>
+                            <div class="city__stat"><img src="img/rain.svg" alt="">
+                                <p>29&deg;C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="week tab__contetn">
+                    <div class="today">
+                        <div class="date">
+                            <p class="date__title">Today</p>
+                            <p class="date__data">oct 14</p>
+                        </div>
+                        <div class="temperature">
+                            <p class="feel">29&deg;C</p>
+                            <p class="real__feel">Real feel 30&deg;C</p>
+                        </div>
+                        <div class="temperature">
+                            <p class="feel">29&deg;C</p>
+                            <p class="real__feel">Real feel 30&deg;C</p>
+                        </div>
+                        <div class="forecast">
+                            <img src="img/sunny.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="days">
+                        <div class="days__item">
+                            <div class="date">
+                                <p class="date__title">Today</p>
+                                <p class="date__data">oct 14</p>
+                            </div>
+                            <div class="days__forecast">
+                                <img src="img/thunder.svg" alt="">
+                                <p>32&deg;</p>
+                                <p>32&deg;</p>
+                            </div>
+                        </div>
+                        <div class="days__item">
+                            <div class="date">
+                                <p class="date__title">Today</p>
+                                <p class="date__data">oct 14</p>
+                            </div>
+                            <div class="days__forecast">
+                                <img src="img/thunder.svg" alt="">
+                                <p>32&deg;</p>
+                                <p>32&deg;</p>
+                            </div>
+                        </div>
+                        <div class="days__item">
+                            <div class="date">
+                                <p class="date__title">Today</p>
+                                <p class="date__data">oct 14</p>
+                            </div>
+                            <div class="days__forecast">
+                                <img src="img/thunder.svg" alt="">
+                                <p>32&deg;</p>
+                                <p>32&deg;</p>
+                            </div>
+                        </div>
+                        <div class="days__item">
+                            <div class="date">
+                                <p class="date__title">Today</p>
+                                <p class="date__data">oct 14</p>
+                            </div>
+                            <div class="days__forecast">
+                                <img src="img/thunder.svg" alt="">
+                                <p>32&deg;</p>
+                                <p>32&deg;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hourly">
+                <div class="hourly__header">
+                    <p class="hourly__header--title">HOURLY</p>
+                    <p class="hourly__header--data">oct 14</p>
+                </div>
+                <ul class="hourly__list">
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                    <li class="hourly__list--item">
+                        <p class="time">4am</p>
+                        <div class="forec"><img src="img/clear.svg" alt="">
+                            <p>Sunny</p>
+                        </div>
+                        <p class="temper">29&deg;</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="error">
+            <div class="error__content">
+                <img src="img/error.svg" alt="">
+                <p>Qwerty could not be found.</p>
+                <p>Please enter a different location.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

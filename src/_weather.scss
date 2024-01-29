@@ -1,0 +1,10 @@
+.weather {
+    width: 60%;
+}
+
+@include media (1200px) {
+    .weather {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

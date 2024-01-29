@@ -1,0 +1,130 @@
+.current {
+    // width: 60%;
+    background-color: $unice-gray;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.current__temp {
+    width: 60%;
+    border-right: 2px solid $light-gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.current__title {
+    width: 100%;
+    color: $orange;
+    font-family: $montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.forecast {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.forecast img {
+    
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.forecast p {
+    width: 100%;
+    font-family: $montserrat;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: $dark-gray;
+}
+
+.temperature {
+    margin-top: 10px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $montserrat;
+}
+
+.feel {
+    width: 100%;
+    height: 70px;
+    color: $orange;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.real__feel {
+    font-size: 20px;
+    color: $dark-gray;
+}
+
+.current__other {
+    width: 40%;
+}
+
+.other__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 60px;
+    gap: 20px;
+}
+
+.other__list--item {
+    width: 100%;
+    font-family: $montserrat;
+    font-size: 20px;
+    display: flex;
+}
+
+.text {
+    width: 50%;
+    color: $dark-gray;
+}
+
+.stat {
+    color: $orange;
+}
+
+@include media (1500px) {
+    .current__temp, .current__other {
+        width: 50%;
+    }
+}
+
+@include media (800px) {
+    .current {
+        flex-wrap: wrap;
+    }
+
+    .current__temp {
+        border-right: none;
+        border-bottom: 2px solid $light-gray;
+        padding-bottom: 20px;
+    }
+
+    .current__temp, .current__other {
+        width: 100%;
+    }
+
+    .other__list {
+        gap: 0;
+    }
+
+    .other__list--item {
+        width: 50%;
+    }
+}
